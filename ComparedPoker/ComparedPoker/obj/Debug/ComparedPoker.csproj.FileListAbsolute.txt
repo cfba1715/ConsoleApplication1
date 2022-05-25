@@ -1,0 +1,12 @@
+/Users/mac/code/rider/ComparedPoker/ComparedPoker/bin/Debug/ComparedPoker.dll
+/Users/mac/code/rider/ComparedPoker/ComparedPoker/bin/Debug/ComparedPoker.pdb
+/Users/mac/code/rider/ComparedPoker/ComparedPoker/obj/Debug/ComparedPoker.csproj.AssemblyReference.cache
+/Users/mac/code/rider/ComparedPoker/ComparedPoker/obj/Debug/ComparedPoker.csproj.CoreCompileInputs.cache
+/Users/mac/code/rider/ComparedPoker/ComparedPoker/obj/Debug/ComparedPoker.dll
+/Users/mac/code/rider/ComparedPoker/ComparedPoker/obj/Debug/ComparedPoker.pdb
+/Users/mac/code/rider/ConsoleApplication1_/ComparedPoker/ComparedPoker/bin/Debug/ComparedPoker.dll
+/Users/mac/code/rider/ConsoleApplication1_/ComparedPoker/ComparedPoker/bin/Debug/ComparedPoker.pdb
+/Users/mac/code/rider/ConsoleApplication1_/ComparedPoker/ComparedPoker/obj/Debug/ComparedPoker.csproj.AssemblyReference.cache
+/Users/mac/code/rider/ConsoleApplication1_/ComparedPoker/ComparedPoker/obj/Debug/ComparedPoker.csproj.CoreCompileInputs.cache
+/Users/mac/code/rider/ConsoleApplication1_/ComparedPoker/ComparedPoker/obj/Debug/ComparedPoker.dll
+/Users/mac/code/rider/ConsoleApplication1_/ComparedPoker/ComparedPoker/obj/Debug/ComparedPoker.pdb

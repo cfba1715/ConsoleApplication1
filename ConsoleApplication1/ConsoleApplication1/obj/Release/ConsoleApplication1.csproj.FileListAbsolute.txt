@@ -1,0 +1,6 @@
+/Users/mac/code/rider/ConsoleApplication1/ConsoleApplication1/bin/Release/ConsoleApplication1.exe
+/Users/mac/code/rider/ConsoleApplication1/ConsoleApplication1/bin/Release/ConsoleApplication1.pdb
+/Users/mac/code/rider/ConsoleApplication1/ConsoleApplication1/obj/Release/ConsoleApplication1.csproj.AssemblyReference.cache
+/Users/mac/code/rider/ConsoleApplication1/ConsoleApplication1/obj/Release/ConsoleApplication1.csproj.CoreCompileInputs.cache
+/Users/mac/code/rider/ConsoleApplication1/ConsoleApplication1/obj/Release/ConsoleApplication1.exe
+/Users/mac/code/rider/ConsoleApplication1/ConsoleApplication1/obj/Release/ConsoleApplication1.pdb
