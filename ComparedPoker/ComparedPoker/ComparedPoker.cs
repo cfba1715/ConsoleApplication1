@@ -5,6 +5,9 @@ using System.Linq;
 namespace ComparedPoker
 {
     delegate void Print(Object str);
+    /// <summary>
+    /// 德州比牌对象类
+    /// </summary>
     public class ComparedPoker
     {
         /// <summary>
@@ -19,7 +22,7 @@ namespace ComparedPoker
         /// <summary>
         /// 获取win的玩家数据
         /// </summary>
-        public int[] hiYoYoWinData
+        public int[] hoMyIsYoYoWinData
         {
             get { return _winPlayerData; }
         }

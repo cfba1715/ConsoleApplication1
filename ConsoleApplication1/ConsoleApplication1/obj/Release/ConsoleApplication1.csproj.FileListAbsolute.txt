@@ -14,3 +14,10 @@
 /Users/mac/code/rider/ConsoleApplication1_/ConsoleApplication1/ConsoleApplication1/obj/Release/ConsoleApplication1.exe
 /Users/mac/code/rider/ConsoleApplication1_/ConsoleApplication1/ConsoleApplication1/obj/Release/ConsoleApplication1.pdb
 /Users/mac/code/rider/ConsoleApplication1_/ConsoleApplication1/ConsoleApplication1/bin/Release/ComparedPoker.xml
+/Users/mac/code/rider/ConsoleApplication1_/ConsoleApplication1/ConsoleApplication1/bin/Release/AtkSharp.dll
+/Users/mac/code/rider/ConsoleApplication1_/ConsoleApplication1/ConsoleApplication1/bin/Release/CairoSharp.dll
+/Users/mac/code/rider/ConsoleApplication1_/ConsoleApplication1/ConsoleApplication1/bin/Release/GdkSharp.dll
+/Users/mac/code/rider/ConsoleApplication1_/ConsoleApplication1/ConsoleApplication1/bin/Release/GioSharp.dll
+/Users/mac/code/rider/ConsoleApplication1_/ConsoleApplication1/ConsoleApplication1/bin/Release/GLibSharp.dll
+/Users/mac/code/rider/ConsoleApplication1_/ConsoleApplication1/ConsoleApplication1/bin/Release/GtkSharp.dll
+/Users/mac/code/rider/ConsoleApplication1_/ConsoleApplication1/ConsoleApplication1/bin/Release/PangoSharp.dll

@@ -4,6 +4,7 @@ using System.Linq;
 namespace Yoyo.Game
 {
     delegate void Print(Object str);
+
     public class Game
     {
         Print print = Console.WriteLine;
@@ -18,6 +19,12 @@ namespace Yoyo.Game
             0x32, 0x33, 0x34, 0x35, 0x36, 0x37, 0x38, 0x39, 0x3A, 0x3B, 0x3C, 0x3D, 0x3E,
         };
 
+        public int[] player1Cards { get; private set; }
+
+        public int[] player2Cards { get; private set; }
+        public int[] deskCards { get; private set; }
+
+        public String winStr { get; private set; }
 
         public void GameStart()
         {
@@ -85,15 +92,20 @@ namespace Yoyo.Game
                 print(String.Format("牌是:花{0}\t值{1}", value & 0xf0, value & 0x0f));
             }
 
-            if (compared.hiYoYoWinData.SequenceEqual(player1HandCards))
+            this.player1Cards = player1HandCards;
+            this.player2Cards = player2HandCards;
+            this.deskCards = deskCards;
+
+            if (compared.hoMyIsYoYoWinData.SequenceEqual(player1HandCards))
             {
                 print("玩家1获胜");
+                this.winStr = "玩家1获胜";
             }
             else
             {
                 print("玩家2获胜");
+                this.winStr = "玩家2获胜";
             }
         }
     }
-
 }
