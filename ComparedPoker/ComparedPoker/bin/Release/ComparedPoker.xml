@@ -1,0 +1,203 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ComparedPoker</name>
+    </assembly>
+    <members>
+        <member name="F:ComparedPoker.ComparedPoker.maxConfig">
+            <summary>
+            配置需要的张数
+            </summary>
+        </member>
+        <member name="P:ComparedPoker.ComparedPoker.hiYoYoWinData">
+            <summary>
+            获取win的玩家数据
+            </summary>
+        </member>
+        <member name="M:ComparedPoker.ComparedPoker.#ctor(System.Int32[],System.Int32[],System.Int32[])">
+            <summary>
+            对比玩家的牌大小
+            </summary>
+            <param name="deskCards"></param>
+            <param name="player1"></param>
+            <param name="player2"></param>
+        </member>
+        <member name="M:ComparedPoker.ComparedPoker.CompareHuLu">
+            <summary>
+            比较葫芦
+            葫芦之间的比较：
+            A、葫芦的大小比较只看3条的点数。
+            B、3条点数大的胜。
+            C、如果3条点数相同（只有都取公牌时才会出现这种情况），则比一对的大小，一对大者胜，如果一对也相等，则同大。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ComparedPoker.ComparedPoker.CompareTieZi">
+            <summary>
+            比较铁支
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ComparedPoker.ComparedPoker.CompareHandPai">
+            <summary>
+            比较手牌
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ComparedPoker.ComparedPoker.CompareTonngHua">
+            <summary>
+            同花之间的比较：
+            A、同花之间的比较不看花色，而看单张最大一张牌的点数。
+            B、如果最大的一张牌的点数一样大，则比相对小一点的那张牌点数；
+            C、如果还一样大，再往下比，直到分出大小来；
+            D、如果五张牌的点数都一样大，那么判断为同等大小。 （同花中，“A”为最大的牌） 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ComparedPoker.ComparedPoker.CompareShunZi">
+            <summary>
+            比较顺子
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ComparedPoker.ComparedPoker.CompareSanTiao">
+            <summary>
+            三条之间的比较
+            三条之间的比较是先比3条的点数，3条大者胜。如果3条同大。则比最大的一张杂牌的大小，大者胜。如果最大的杂牌点数也相等，则比第二张杂牌的大小，大者胜。若还是相等，则同大。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ComparedPoker.ComparedPoker.Compare1Dui">
+            <summary>
+            对子之间的比较
+            A、对子之间的比较先看对子的大小，点数大的胜；
+            B、若点数相同，则再看最大的第一张杂牌，点数大的胜；
+            C、最大的一张杂牌点数相同的话，比第二张大的杂牌，点数大的胜；
+            D、如果再相同，则比最后一张杂牌的大小，点数大的胜；
+            E、若都相同，则判断为相同大小。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ComparedPoker.ComparedPoker.Compare2Dui">
+            <summary>
+            二对之间的比较
+            A、二对之间的比较先看最大的一对，点数大的胜；
+            B、如果点数相同，则比第二对，同样是点数大的胜；
+            C、若第二对也相同，则比杂牌的大小，杂牌点数大者胜；
+            D、要是连杂牌点数都一样了，判断为相同大小。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ComparedPoker.ComparedPoker.CompareSanPai">
+            <summary>
+            比较散牌
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ComparedPoker.ComparedPoker.CompareTonngHuaShun">
+            <summary>
+            比较同花顺
+            同花顺之间的比较：
+            A、同花顺虽然以花色成牌型，但两个同花顺相比时不比花色，只比点数，从最大的一张牌开始比起，大者胜；
+            B、果相同，则再比稍小一点的那张，大者胜；
+            C、如果再相同再往下比，直到分出大小来；
+            D、若是五张牌的点数都一样大，则两个同花顺同样大小。
+            E、比如黑桃的10、J、Q、K、A与梅花的10、J、Q、K、A相比，两者是同样大小的。
+            </summary>
+            <returns>比较成功返回true 没比较出来返回false</returns>
+        </member>
+        <member name="M:ComparedPoker.ComparedPoker.GetAllMaxDanPai(System.Int32[])">
+            <summary>
+            获取最大的5张散牌
+            </summary>
+            <param name="cards"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ComparedPoker.ComparedPoker.GetAllSanTiao(System.Int32[])">
+            <summary>
+            获取三条牌型数据
+            </summary>
+            <param name="cards"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ComparedPoker.ComparedPoker.GetAll1Dui(System.Int32[])">
+            <summary>
+            获取最大的对子牌型
+            </summary>
+            <param name="cards"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ComparedPoker.ComparedPoker.GetAll2Dui(System.Int32[])">
+            <summary>
+            获取2对牌型最大的
+            </summary>
+            <param name="cards"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ComparedPoker.ComparedPoker.GetAllHuLu(System.Int32[])">
+            <summary>
+            获取葫芦的牌 最大的
+            </summary>
+            <param name="cards"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ComparedPoker.ComparedPoker.GetAllTieZi(System.Int32[])">
+            <summary>
+            获取铁支
+            </summary>
+            <param name="cards"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ComparedPoker.ComparedPoker.GetAllTongHuaShun(System.Int32[])">
+            <summary>
+            获取同花顺
+            </summary>
+            <param name="cards"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ComparedPoker.ComparedPoker.AddCardToDesk(System.Int32[],System.Int32[])">
+            <summary>
+            2个牌放一个集合
+            </summary>
+            <param name="desk"></param>
+            <param name="player"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ComparedPoker.ComparedPoker.SortValue(System.Int32[])">
+            <summary>
+            牌更具值大小排序
+            </summary>
+            <param name="cards"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ComparedPoker.ComparedPoker.GetCombinationList(System.Collections.Generic.List{System.Int32},System.Int32)">
+            <summary>
+            获得从n个不同元素中任意选取m个元素的组合的所有组合形式的列表
+            </summary>
+            <param name="elements">供组合选择的元素</param>
+            <param name="m">组合中选取的元素个数</param>
+            <returns>返回一个包含列表的列表，包含的每一个列表就是每一种组合可能</returns>
+        </member>
+        <member name="M:ComparedPoker.ComparedPoker.GetAllTongHua(System.Int32[])">
+            <summary>
+            获取所有的同花集合
+            </summary>
+            <param name="cards"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ComparedPoker.ComparedPoker.GetAllShunZi(System.Int32[])">
+            <summary>
+            获取所有的顺子集合
+            </summary>
+            <param name="cards"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ComparedPoker.ComparedPoker.DictionaryValue(System.Int32[])">
+            <summary>
+            更具值分类
+            </summary>
+            <param name="cards"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

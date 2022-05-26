@@ -4,3 +4,4 @@
 /Users/mac/code/rider/ConsoleApplication1_/ComparedPoker/ComparedPoker/bin/Release/ComparedPoker.pdb
 /Users/mac/code/rider/ConsoleApplication1_/ComparedPoker/ComparedPoker/obj/Release/ComparedPoker.dll
 /Users/mac/code/rider/ConsoleApplication1_/ComparedPoker/ComparedPoker/obj/Release/ComparedPoker.pdb
+/Users/mac/code/rider/ConsoleApplication1_/ComparedPoker/ComparedPoker/bin/Release/ComparedPoker.xml
