@@ -32,6 +32,9 @@
         <WarningLevel>4</WarningLevel>
     </PropertyGroup>
     <ItemGroup>
+        <Reference Include="ComparedPoker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\ComparedPoker\ComparedPoker\obj\Release\ComparedPoker.dll</HintPath>
+        </Reference>
         <Reference Include="System" />
         <Reference Include="System.Core" />
         <Reference Include="System.Data" />
@@ -41,12 +44,6 @@
         <Compile Include="Game\Game.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
-    </ItemGroup>
-    <ItemGroup>
-      <ProjectReference Include="..\..\ComparedPoker\ComparedPoker\ComparedPoker.csproj">
-        <Project>{60e08cfb-7aeb-4947-af01-803f673a4a7e}</Project>
-        <Name>ComparedPoker</Name>
-      </ProjectReference>
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

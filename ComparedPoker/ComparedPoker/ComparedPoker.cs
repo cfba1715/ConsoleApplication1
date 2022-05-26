@@ -775,19 +775,29 @@ namespace ComparedPoker
             {
                 if (values.Count == 2)
                 {
+                    
+                    
+                    
                     var maxValue = retData[0] & 0x0f;
                     var minValue = retData[2] & 0x0f;
                     var tempValue = values[0] & 0x0f;
+
                     if (tempValue > minValue)
                     {
-                        retData[2] = values[0];
-                        retData[3] = values[1];
-                    }
-
-                    if (maxValue < tempValue)
-                    {
-                        retData[0] = values[0];
-                        retData[1] = values[1];
+                        if (tempValue > maxValue )
+                        {
+                            //大的给小的 并给大的重新赋值
+                            retData[2] = retData[0];
+                            retData[3] = retData[1];
+                            
+                            retData[0] = values[0];
+                            retData[1] = values[1];
+                        }
+                        else
+                        {
+                            retData[2] = values[0];
+                            retData[3] = values[1];
+                        }
                     }
                 }
                 else if (values.Count == 1)

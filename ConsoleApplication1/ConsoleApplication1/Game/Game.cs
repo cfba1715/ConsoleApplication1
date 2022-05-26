@@ -56,15 +56,15 @@ namespace Yoyo.Game
             // new ComparedPoker(deskCards, player1HandCards, player2HandCards);
             // deskCards = new[]
             // {
-            //     0x1A, 0x1B, 0x1C, 0x1D, 0x1E,
+            //     0x12, 0x2E, 0x3E, 0x22, 0x1B,
             // };
             // player1HandCards = new[]
             // {
-            //     0x2B, 0x2C,
+            //     0x3A, 0x2B,
             // };
             // player2HandCards = new[]
             // {
-            //     0x38, 0x39,
+            //     0x5, 0x39,
             // };
             var compared = new ComparedPoker.ComparedPoker(deskCards, player1HandCards, player2HandCards);
             print("桌面的牌");
